@@ -35,7 +35,12 @@
 
 
   <div class="large-hero">
-    <img src="assets/images/hero--large.jpg">
+    <picture>
+      <source srcser="assets/images/hero--large.jpg 1920w, assets/images/hero--large-hi-dpi.jpg 3840w" media="(min-width:1080)">
+      <source srcset="assets/images/hero--medium.jpg 1380px, assets/images/hero--medium-hi-dpi.jpg 2760w" media="(min-width:990px)">
+      <source srcset="assets/images/hero--small.jpg 990w, assets/images/hero--small-hi-dpi.jpg 1980px" media="(min-width:640px)">
+      <img srcset="assets/images/hero--smaller.jpg 640w, assets/images/hero--smaller-hi-dpi.jpg 1280w" alt="ocean and mountain">
+    </picture>
     <div class="large-hero__text-content">
       <h1 class="large-hero__title">Your clarity.</h1>
       <h2 class="large-hero__subtitle">One trip away.</h2>
@@ -94,7 +99,8 @@
     <h3>John Smith</h3>
     <h3>4 Time Escaper</h3>
     <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
-      consectetur.&rdquo;</p>
+      consectetur.&rdquo;
+    </p>
 
     <img src="assets/images/testimonial-cat.jpg">
     <h3>Cat McKitty</h3>
